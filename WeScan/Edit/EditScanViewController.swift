@@ -74,6 +74,11 @@ final class EditScanViewController: UIViewController {
         setupConstraints()
         title = NSLocalizedString("wescan.edit.title", tableName: nil, bundle: Bundle(for: EditScanViewController.self), value: "Edit Scan", comment: "The title of the EditScanViewController")
         navigationItem.rightBarButtonItem = nextButton
+        
+        let backText = NSLocalizedString("wescan.edit.back.title", tableName: nil, bundle: Bundle(for: EditScanViewController.self), value: "Back", comment: "")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: backText, style: .plain, target: nil, action: nil)
+
+
         if let firstVC = self.navigationController?.viewControllers.first, firstVC == self {
             navigationItem.leftBarButtonItem = cancelButton
         } else {

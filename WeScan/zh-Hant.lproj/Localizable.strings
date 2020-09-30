@@ -10,6 +10,7 @@
 "wescan.edit.button.next" = "下一步";
 
 /* The title on the navigation bar of the Edit screen. */
+"wescan.edit.back.title" = "背部";
 "wescan.edit.title" = "編輯";
 
 /* The title on the navigation bar of the Review screen. */
